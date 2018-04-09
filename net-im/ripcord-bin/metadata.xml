@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<name>Kitty Cat</name>
+		<email>ki@tty.sh</email>
+	</maintainer>
+	<longdescription lang="en">
+		Alternative QT-based Discord client (binary distribution)
+	</longdescription>
+</pkgmetadata>
