@@ -11,7 +11,7 @@ SRC_URI="https://cancel.fm/dl/Ripcord-${PV}-x86_64.AppImage"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 RESTRICT="bindist"
 
