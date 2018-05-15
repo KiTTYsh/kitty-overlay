@@ -44,6 +44,7 @@ src_unpack() {
 	${S}/${A} --appimage-extract Ripcord
 	${S}/${A} --appimage-extract Ripcord.desktop
 	${S}/${A} --appimage-extract Ripcord_Icon.png
+	${S}/${A} --appimage-extract twemoji.ripdb
 	popd
 }
 
@@ -52,6 +53,7 @@ src_install() {
 	doicon -s 512 squashfs-root/Ripcord_Icon.png
 	echo "Categories=Network;InstantMessaging;" >> ${S}/squashfs-root/Ripcord.desktop
 	domenu squashfs-root/Ripcord.desktop
+	insinto /usr; doins squashfs-root/twemoji.ripdb
 }
 
 pkg_postinst() {
