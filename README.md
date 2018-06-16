@@ -4,4 +4,6 @@ Kitty's Gentoo overlay of miscellaneous packages.  No warranty, use at your own 
 ## Included Packages
 * net-im/ripcord-bin
 <br>`Alternative QT-based Discord client (binary distribution)`
+* x11-misc/qt5-styleplugins
+<br>`style plugins for qt5 (including gtk)` [Source](https://forums.gentoo.org/viewtopic-p-8175492.html#8175492)
 
