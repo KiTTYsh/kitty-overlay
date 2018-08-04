@@ -51,7 +51,6 @@ src_unpack() {
 src_install() {
     dobin squashfs-root/Ripcord
 	doicon -s 512 squashfs-root/Ripcord_Icon.png
-	echo "Categories=Network;InstantMessaging;" >> ${S}/squashfs-root/Ripcord.desktop
 	domenu squashfs-root/Ripcord.desktop
 	insinto /usr; doins squashfs-root/twemoji.ripdb
 }
