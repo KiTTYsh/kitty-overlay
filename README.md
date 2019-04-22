@@ -7,3 +7,6 @@ Kitty's Gentoo overlay of miscellaneous packages.  No warranty, use at your own 
 * x11-misc/qt5-styleplugins
 <br>`style plugins for qt5 (including gtk)` [Source](https://forums.gentoo.org/viewtopic-p-8175492.html#8175492)
 
+## Included Dependencies
+* dev-libs/libsignal
+<br>`Signal Protocol C Library (for psi-plugins[omemo])
