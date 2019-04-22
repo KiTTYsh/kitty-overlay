@@ -2,6 +2,8 @@
 Kitty's Gentoo overlay of miscellaneous packages.  No warranty, use at your own risk.  Licensing may not be accurately represented.
 
 ## Included Packages
+* net-im/psi-plugins
+<br>`All Psi IM plugins except 3rd party ones` as net-im/psi does not include any plugins
 * net-im/ripcord-bin
 <br>`Alternative QT-based Discord client (binary distribution)`
 * x11-misc/qt5-styleplugins
