@@ -9,4 +9,4 @@ Kitty's Gentoo overlay of miscellaneous packages.  No warranty, use at your own 
 
 ## Included Dependencies
 * dev-libs/libsignal
-<br>`Signal Protocol C Library (for psi-plugins[omemo])
+<br>`Signal Protocol C Library (for psi-plugins[omemo])`
