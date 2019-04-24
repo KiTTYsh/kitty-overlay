@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -9,7 +9,7 @@ DESCRIPTION="QT-based Discord/Slack Client"
 HOMEPAGE="https://cancel.fm/ripcord/"
 SRC_URI="https://cancel.fm/dl/Ripcord-${PV}-x86_64.AppImage"
 
-LICENSE=""
+LICENSE="freedist"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
@@ -37,19 +37,19 @@ RDEPEND="
 "
 
 src_unpack() {
-    mkdir ${S}
-	cp ${DISTDIR}/${A} ${S}/
-	pushd ${S}
+	mkdir "${S}"
+	cp "${DISTDIR}/${A}" "${S}/"
+	pushd "${S}"
 	chmod +x ${A}
-	${S}/${A} --appimage-extract Ripcord
-	${S}/${A} --appimage-extract Ripcord.desktop
-	${S}/${A} --appimage-extract Ripcord_Icon.png
-	${S}/${A} --appimage-extract twemoji.ripdb
+	"${S}/${A}" --appimage-extract Ripcord
+	"${S}/${A}" --appimage-extract Ripcord.desktop
+	"${S}/${A}" --appimage-extract Ripcord_Icon.png
+	"${S}/${A}" --appimage-extract twemoji.ripdb
 	popd
 }
 
 src_install() {
-    dobin squashfs-root/Ripcord
+	dobin squashfs-root/Ripcord
 	doicon -s 512 squashfs-root/Ripcord_Icon.png
 	domenu squashfs-root/Ripcord.desktop
 	insinto /usr; doins squashfs-root/twemoji.ripdb
@@ -64,4 +64,3 @@ pkg_postrm() {
 	gnome2_icon_cache_update
 	xdg_desktop_database_update
 }
-
