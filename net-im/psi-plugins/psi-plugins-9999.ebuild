@@ -26,8 +26,8 @@ src_install() {
 	cmake-utils_src_install
 	if has_version "net-im/psi[extras]"; then
 		einfo "Psi+ detected, relocating plugins to psi-plus folder"
-		mv "${D}/usr/lib*/psi" "${D}/usr/share/psi-plus"
+		mv "${D}/usr/lib"*"/psi" "${D}/usr/share/psi-plus"
 	else
-		mv "${D}/usr/lib*/psi" "${D}/usr/share/psi"
+		mv "${D}/usr/lib"*"/psi" "${D}/usr/share/psi"
 	fi
 }
