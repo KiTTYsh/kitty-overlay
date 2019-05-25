@@ -19,7 +19,8 @@ IUSE=""
 
 RDEPEND="net-im/psi
 dev-libs/libsignal
-app-text/htmltidy"
+app-text/htmltidy
+net-libs/libotr"
 DEPEND="${RDEPEND}"
 
 src_install() {
