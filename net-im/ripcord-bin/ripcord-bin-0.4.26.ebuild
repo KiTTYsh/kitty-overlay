@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -15,10 +15,10 @@ KEYWORDS="~amd64"
 IUSE=""
 RESTRICT="bindist"
 
-DEPEND=""
+DEPEND="dev-util/patchelf"
 RDEPEND="
 	dev-libs/libffi
-	dev-libs/libsodium:0/18
+	dev-libs/libsodium:0/23
 	dev-libs/openssl:0
 	dev-qt/qtconcurrent:5
 	dev-qt/qtgui:5
@@ -49,6 +49,8 @@ src_unpack() {
 }
 
 src_install() {
+	# Horrible, horrible compatibility patching.
+	sed -i 's/libsodium\.so\.18/libsodium.so.23/g' squashfs-root/Ripcord
 	dobin squashfs-root/Ripcord
 	doicon -s 512 squashfs-root/Ripcord_Icon.png
 	domenu squashfs-root/Ripcord.desktop
