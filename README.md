@@ -8,6 +8,8 @@ Kitty's Gentoo overlay of miscellaneous packages.  No warranty, use at your own 
 <br>`Alternative QT-based Discord client (binary distribution)`
 * x11-misc/qt5-styleplugins
 <br>`style plugins for qt5 (including gtk)` [Source](https://forums.gentoo.org/viewtopic-p-8175492.html#8175492)
+* x11-misc/xow
+<br>`Linux driver for the Xbox One wireless dongle`
 
 ## Included Dependencies
 * dev-libs/libsignal
